@@ -26,7 +26,10 @@
     "start": "builder run dev",
     "test": "builder run check",
     "version": "builder run npm:version",
-    "storybook": "start-storybook -p 3001"
+    "storybook": "start-storybook -p 3001",
+    "lank-watch": "lank exec -t web -u -- builder run build-watch --expand-archetype",
+    "lank-run": "lank exec -m victory-pie -uq -- builder run dev --expand-archetype",
+    "lank-test-frontend": "lank exec -m victory-pie -uq -- builder run test-frontend --expand-archetype"
   },
   "dependencies": {
     "builder": "^3.2.1",
