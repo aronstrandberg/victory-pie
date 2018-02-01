@@ -26,7 +26,9 @@
     "start": "builder run dev",
     "test": "builder run check",
     "version": "builder run npm:version",
-    "storybook": "start-storybook -p 3001"
+    "storybook": "start-storybook -p 3001",
+    "lank-watch": "lank exec -u -- builder run build-watch",
+    "lank-run": ""
   },
   "dependencies": {
     "builder": "^3.2.1",
